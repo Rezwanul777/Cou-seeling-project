@@ -16,9 +16,9 @@
 </head>
 <body class="container">
    <!-- Navber section -->
-   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:tomato">
+   <nav class="navbar navbar-expand-lg navbar-light sticky-md-top font-bolder " style="background-color:#9999e6" >
       <div class="container">
-         <a class="navbar-brand" href="#">
+         <a class="navbar-brand" href="#home">
             <img src="images/skill.png" alt="">
          </a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -26,21 +26,21 @@
             <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-dark">
                <li class="nav-item">
-                  <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active text-primary" aria-current="page" href="#home">Home</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link text-primary" href="#">Graphics</a>
+                  <a class="nav-link text-dark" href="#graphics">Graphics</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link text-primary" href="#">Programming</a>
+                  <a class="nav-link text-dark" href="#programming">Programming</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link text-primary" href="#">Vedio editing</a>
+                  <a class="nav-link text-dark" href="#vedio">Vedio editing</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link text-primary" href="#">Web Development</a>
+                  <a class="nav-link text-dark" href="#subscribe">Subscribe</a>
                </li>
 
 
@@ -50,16 +50,16 @@
       </div>
    </nav>
    <!-- Banner part section -->
-   <section class="mt-5">
+   <section id="home" class="mt-5">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
          <div class="carousel-inner bg-info ">
             <div class="carousel-item active">
                <div class="row d-flex align-items-center p-5 rounded-2">
                   <div class="col-7">
                      <h1>Web Development with Javascript including MERN</h1>
-                     <p>One of the best course ever</p>
+                     <p class="py-1 fw-bolder">One of the best course ever</p>
                      <h3 class="mb-2">Price:BDT-8000 Taka</h3>
-                     <button type="button" class="btn btn-warning">Buy Now</button>
+                     <button type="button" class="btn btn-warning mt-2">Buy Now</button>
                   </div>
                   <div class="col-5">
                      <img src="images/javascript.jpg" class="d-block w-100 rounded-2" alt="">
@@ -71,9 +71,9 @@
                <div class="row d-flex align-items-center p-5 rounded-2">
                   <div class="col-7">
                      <h1>Web Development with PHP including LARAVEL</h1>
-                     <p>One of the famous course ever</p>
+                     <p class="py-1 fw-bolder">One of the famous course ever</p>
                      <h3 class="mb-2">Price:BDT-6000 Taka</h3>
-                     <button type="button" class="btn btn-warning">Buy Now</button>
+                     <button type="button" class="btn btn-warning mt-2">Buy Now</button>
                   </div>
                   <div class="col-5">
                      <img src="images/php.jpg" class="d-block w-100 rounded-2" alt="">
@@ -84,9 +84,9 @@
                <div class="row d-flex align-items-center p-5 rounded-2">
                   <div class="col-7">
                      <h1>Web Development with PYTHON including DJANGO</h1>
-                     <p>One of the thrilling course ever</p>
+                     <p class="py-1 fw-bolder">One of the thrilling course ever</p>
                      <h3 class="mb-2">Price:BDT-7000 Taka</h3>
-                     <button type="button" class="btn btn-warning">Buy Now</button>
+                     <button type="button" class="btn btn-warning mt-2">Buy Now</button>
                   </div>
                   <div class="col-5">
                      <img src="images/python.jpg" class="d-block w-100 rounded-2" alt="">
@@ -134,7 +134,7 @@
 
    <!-- Course Details part -->
    <!-- Graphics part -->
-   <section class="mt-5">
+   <section id="graphics" class="mt-5">
       <h2 class="text-center pt-3">Graphics Design Course</h2>
       <div class="row row-cols-1 row-cols-md-3 g-5 mt-1">
          <div class="col">
@@ -165,6 +165,7 @@
          </div>
          <div class="col">
            <div class="card h-100">
+            <span class="position-absolute  top-0 start-100 translate-middle bg-warning rounded-pill p-2">Hot</span>
              <img src="images/graphics3.jpg" class="card-img-top img-fluid" alt="...">
              <div class="card-body">
                <h5 class="card-title h4">Animation Design</h5>
@@ -182,12 +183,13 @@
   
    <!-- programming part -->
 
-   <section class="mt-5">
+   <section id="programming" class="mt-5">
       <h2 class="text-center pt-3">Programming Crash Course</h2>
       <div class="row row-cols-1 row-cols-md-3 g-5 mt-1">
          <div class="col">
            <div class="card h-100">
-             <img src="images/javascript.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="position-absolute  top-0 start-100 translate-middle bg-warning rounded-pill p-2">Hot</span>
+             <img src="images/programming/javascript.jpg" class="card-img-top img-fluid" alt="...">
              <div class="card-body">
                <h5 class="card-title h4">Javascript Language</h5>
                <h6 class="h5">Price:9000 Taka</h6>
@@ -200,7 +202,7 @@
          </div>
          <div class="col">
            <div class="card h-100">
-             <img src="images/python.jpg" class="card-img-top img-fluid" alt="...">
+             <img src="images/programming/python.jpg" class="card-img-top img-fluid" alt="...">
              <div class="card-body">
                <h5 class="card-title  h4">Python Language</h5>
                <h6 class="h5">Price:8000 Taka</h6>
@@ -213,7 +215,7 @@
          </div>
          <div class="col">
            <div class="card h-100">
-             <img src="images/php.jpg" class="card-img-top img-fluid" alt="...">
+             <img src="images/programming/php.jpg" class="card-img-top img-fluid" alt="...">
              <div class="card-body">
                <h5 class="card-title h4">Php Language</h5>
                <h6 class="h5">Price:6000 Taka</h6>
@@ -229,11 +231,12 @@
 
     <!--Vedio Editing part -->
 
-    <section class="mt-5">
+    <section id="vedio" class="mt-5">
       <h2 class="text-center pt-3">Vedio Editting Course</h2>
       <div class="row row-cols-1 row-cols-md-3 g-5 mt-1">
          <div class="col">
            <div class="card h-100">
+            <span class="position-absolute  top-0 start-100 translate-middle bg-warning rounded-pill p-2">Hot</span>
              <img src="images/vedio1.jpg" class="card-img-top img-fluid" alt="...">
              <div class="card-body">
                <h5 class="card-title h4">Bespoke Editing</h5>
@@ -275,7 +278,7 @@
    </section>
 
    <!-- Subscribe Part -->
-   <section style="height:350px" class="bg-info mt-5 d-flex justify-content-center align-items-center rounded-3">
+   <section id="subscribe" style="height:380px" class="bg-info mt-5 d-flex justify-content-center align-items-center rounded-3">
       <div>
          <h2 class="py-1">LETS STAY IN TOUCH</h2>
          <h3 class="py-1">Gets update on Sales and Course updates</h3>
